@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, transparent, rgb(0, 212, 142));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: rgb(70, 160, 163);
+    border-radius: 5%;
+    padding: 2rem;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 1em;
+}
+
+form button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: rgb(9, 76, 107);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(0, 58, 85);
+}
+
+form .errorlist li{
+    list-style-type: none;
+    color: rgb(175, 11, 11);
+}
+
+@media screen and (max-width: 600px) {
+    form{
+        width: 90%;
+        
+    }
+}
